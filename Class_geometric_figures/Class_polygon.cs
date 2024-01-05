@@ -10,20 +10,21 @@ namespace Geometric_figures.Class_geometric_figures
 {
     class Class_polygon : Class_grafig
     {
-        public Class_polygon() {
+        public Class_polygon() : base()
+        {            
             points = new Point[5];
-            points[0] = new Point(30, 50);
-            points[1] = new Point(60, 50);
-            points[2] = new Point(80, 80);
-            points[3] = new Point(100, 90);
-            points[4] = new Point(120 , 100);
+            points[0] = new Point(50, 50);
+            points[1] = new Point(100, 100);
+            points[2] = new Point(50, 150);
+            points[3] = new Point(200, 100);
+            points[4] = new Point(100, 170);
         }
-        public Class_polygon(Point[] points)
-        {
+        public Class_polygon(Point[] points) : base()
+        {            
             this.points = points;
         }
-        public override void Print_grfig(PictureBox pictureBox) 
-        {
+        public override void print_grfig(PictureBox pictureBox) 
+        {            
             pictureBox.Refresh();
             figures = pictureBox.CreateGraphics();
             figures.DrawPolygon(pen, points);

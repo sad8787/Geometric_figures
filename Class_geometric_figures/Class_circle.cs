@@ -9,12 +9,15 @@ namespace Geometric_figures.Class_geometric_figures
 {
     class Class_circle : Class_grafig
     {
-        public Class_circle() { }
-        public override void Print_grfig(PictureBox pictureBox)
-        {
+        public Class_circle() : base()   
+        {            
+        }
+        public override void print_grfig(PictureBox pictureBox)
+        {           
             pictureBox.Refresh();
             figures = pictureBox.CreateGraphics();
             figures.DrawEllipse(pen, 10, 10, 50, 25);
+            
         }
     }
 }

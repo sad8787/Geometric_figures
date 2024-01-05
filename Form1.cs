@@ -21,25 +21,25 @@ namespace Geometric_figures
         private void polygon_Click(object sender, EventArgs e)
         {
             Class_polygon polygon = new Class_polygon();
-            polygon.Print_grfig(pictureBox1);
+            polygon.print_grfig(pictureBox1);
         }
 
         private void button_rectangle_Click(object sender, EventArgs e)
         {
             Class_rectangle rectangle = new Class_rectangle();
-            rectangle.Print_grfig(pictureBox1);
+            rectangle.print_grfig(pictureBox1);
         }
 
         private void button_circle_Click(object sender, EventArgs e)
         {
             Class_circle circle = new Class_circle();
-            circle.Print_grfig(pictureBox1);
+            circle.print_grfig(pictureBox1);
         }
 
         private void button_curve_Click(object sender, EventArgs e)
         {
             Class_curve curve = new Class_curve();
-            curve.Print_grfig(pictureBox1);
+            curve.print_grfig(pictureBox1);
         }
     }
 }
