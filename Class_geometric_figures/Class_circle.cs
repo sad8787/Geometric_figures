@@ -16,7 +16,7 @@ namespace Geometric_figures.Class_geometric_figures
         {           
             pictureBox.Refresh();
             figures = pictureBox.CreateGraphics();
-            figures.DrawEllipse(pen, 10, 10, 50, 25);
+            figures.DrawEllipse(pen, 10, 10, 50, 50);
             
         }
     }
